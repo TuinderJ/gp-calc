@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 form.addEventListener('submit', (event) => event.preventDefault());
 const input = document.querySelector('#cost-input');
-input.addEventListener('change', (event) => {
+input.addEventListener('keyup', (event) => {
   updateOutputs(event.srcElement.value);
 });
 
